@@ -1,0 +1,31 @@
+OPERATING SYSTEMS
+
+An operating system (OS) is system software that manages computer hardware and software resources and provides common services for programs. Its main functions are process management, memory management, file system management, and device management.
+
+A process is a program in execution. Each process has its own address space, program counter, registers and stack. A thread is a lightweight unit of execution inside a process; threads of the same process share code, data and open files but have their own stack and registers.
+
+CPU scheduling decides which process in the ready queue gets the CPU next. Common algorithms are First Come First Served (FCFS), Shortest Job First (SJF), Round Robin (RR) and Priority Scheduling. Round Robin gives each process a fixed time quantum and is widely used in time-sharing systems.
+
+A deadlock is a situation where a set of processes are blocked because each process holds a resource and waits for another resource held by another process. Four conditions must hold together for a deadlock: mutual exclusion, hold and wait, no preemption, and circular wait. Deadlocks can be handled by prevention, avoidance (Banker's algorithm), detection and recovery, or by ignoring the problem.
+
+Virtual memory lets a system run programs larger than physical memory by keeping only the needed pages in RAM. Paging divides memory into fixed-size blocks called pages and frames. A page fault occurs when a process accesses a page that is not in RAM. Page replacement algorithms include FIFO, LRU (Least Recently Used) and Optimal.
+
+DATABASE MANAGEMENT SYSTEMS
+
+A database management system (DBMS) is software used to create, store, retrieve and manage data. The relational model stores data in tables made of rows (tuples) and columns (attributes). A primary key uniquely identifies each row in a table. A foreign key is a column that refers to the primary key of another table and enforces referential integrity.
+
+Normalization is the process of organizing data to reduce redundancy and improve integrity. First Normal Form (1NF) requires atomic values. Second Normal Form (2NF) removes partial dependencies. Third Normal Form (3NF) removes transitive dependencies. BCNF is a stricter version of 3NF.
+
+A transaction is a logical unit of work. The ACID properties guarantee reliable transactions: Atomicity (all or nothing), Consistency (database moves from one valid state to another), Isolation (concurrent transactions do not interfere), and Durability (committed changes are permanent).
+
+SQL is the standard language for relational databases. DDL commands (CREATE, ALTER, DROP) define structure, DML commands (SELECT, INSERT, UPDATE, DELETE) manipulate data, and joins (INNER, LEFT, RIGHT, FULL) combine rows from multiple tables.
+
+MACHINE LEARNING BASICS
+
+Machine learning is a field of AI where systems learn patterns from data instead of being explicitly programmed. Supervised learning uses labeled data and includes classification and regression. Unsupervised learning finds structure in unlabeled data, for example clustering with K-Means. Reinforcement learning trains an agent to maximize reward through trial and error.
+
+Overfitting happens when a model learns the training data too well, including noise, and performs poorly on new data. Underfitting happens when a model is too simple to capture the pattern. Techniques to reduce overfitting include cross-validation, regularization, more training data and early stopping.
+
+Common evaluation metrics for classification are accuracy, precision, recall and F1-score. Precision is the fraction of predicted positives that are correct. Recall is the fraction of actual positives that are found. The F1-score is the harmonic mean of precision and recall.
+
+Retrieval-Augmented Generation (RAG) combines a retriever, which finds relevant text chunks using embeddings, with a large language model that generates an answer grounded in the retrieved text. This reduces hallucination and lets the model use private or up-to-date knowledge.
